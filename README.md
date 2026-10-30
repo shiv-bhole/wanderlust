@@ -15,6 +15,18 @@ This project is part of my learning journey in full-stack web development. It is
 - Validate listing and review data using Joi.
 - Render dynamic pages with EJS templates.
 - Responsive layouts using Bootstrap.
+- Display success and error notifications using session-based flash messages.
+- Use Express sessions to manage temporary messages between requests.
+- Show dismissible Bootstrap alerts for user feedback.
+- Redirect users with appropriate notifications when a listing is not found.
+- User registration and login using Passport Local.
+- Password hashing and authentication using Passport Local Mongoose.
+- Session-based authentication to maintain login state across requests.
+- Logout functionality and login-aware navigation.
+- Protect listing creation, editing, and deletion routes from unauthenticated users.
+- Restrict listing modifications to the listing owner.
+- Restrict review deletion to the review author.
+- Redirect users to their originally requested page after successful login.
 
 ## Tech Stack
 
@@ -23,6 +35,8 @@ This project is part of my learning journey in full-stack web development. It is
 **Database:** MongoDB, Mongoose
 
 **Frontend:** EJS, HTML, CSS, JavaScript, Bootstrap
+
+**Authentication and Sessions:** Passport, Passport Local, Passport Local Mongoose, Express Session, Connect Flash
 
 **Other tools:** Joi, Method-Override, EJS-Mate, Font Awesome
 
@@ -60,7 +74,7 @@ Install the following before running the application:
 5. Start the application:
 
    ```bash
-   node app.js
+   npm start
    ```
 
 6. Open your browser and visit:
@@ -103,8 +117,6 @@ The project is under development. Core listing and review operations are impleme
 
 ## Planned Improvements
 
-- User registration and login.
-- Authentication and authorization.
 - Improved form validation and error handling.
 - Environment-based configuration for the database connection.
 - Deployment to a hosting platform.
